@@ -15,4 +15,6 @@ switch (result){
     case 'boolean':
         console.log('тип текущей переменной x: ' + x + ' - логический');
         break;
+    default:
+        console.log('Тип x не определён')
 };
