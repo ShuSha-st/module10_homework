@@ -20,3 +20,16 @@ for (let i=0; i<arr.length; i=+1) {
 if (arrWork.includes(false)){
     console.log('False')
 } else {console.log('True')}
+
+// Интересный способ решения, плюс вам за изобретательность :) но можно было решить проще и оптимальнее - без использования второго массива. Прикладываю альтернативный вариант решения ниже:
+
+let isEqual = true;
+const reference = arr[0];
+
+for (let item of arr) {
+	if (item !== reference) {
+		isEqual = false;
+	}
+}
+
+console.log(isEqual);
